@@ -1,0 +1,110 @@
+/* GENERAL STYLES AND CLASSES */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.cinzel-regular {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.flex {
+  display: flex;
+  gap: var(--gap, 0.5rem);
+}
+
+#hero {
+  background-image: url("./../img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 80% 5%;
+  height: 100vh;
+  width: 100vw;
+}
+
+header {
+  background-color: #d1ad8f;
+  height: 5rem;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+header .logo span {
+  color: #ffffff;
+}
+header .btnToggle {
+  display: none;
+}
+
+.navbar {
+  width: 28rem;
+}
+.navbar__list {
+  justify-content: space-between;
+}
+.navbar__list .navbar__item .navbar__link {
+  color: #353535;
+  font-size: 1rem;
+}
+.navbar__list .navbar__item .navbar__link:hover {
+  color: #ffffff;
+  transition: all 0.3s;
+}
+
+@media (max-width: 50em) {
+  header .btnToggle {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    z-index: 10;
+    display: block;
+    aspect-ratio: 1;
+    cursor: pointer;
+    width: 2rem;
+    border: none;
+    background-image: url("./../img/icon-hamburger.svg");
+    background-color: transparent;
+    background-repeat: no-repeat;
+  }
+  .btnToggle[aria-expanded=true] {
+    background-image: url("./../img/icon-close.svg");
+  }
+  .navbar {
+    position: fixed;
+    inset: 0 0 0 45%;
+    background: hsla(0, 0%, 100%, 0.001);
+    backdrop-filter: blur(0.5rem);
+    transform: translateX(100%);
+    transition: transform 0.4s ease-out;
+  }
+  .navbar__list {
+    flex-direction: column;
+    padding-top: 5rem;
+  }
+  .navbar .navbar__item {
+    padding: 1rem;
+  }
+  .navbar[data-visible=true] {
+    transform: translateX(0);
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
