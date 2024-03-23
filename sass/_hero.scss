@@ -1,36 +1,3 @@
-/* GENERAL STYLES AND CLASSES */
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  font-size: 100%;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-li {
-  list-style-type: none;
-}
-a {
-  text-decoration: none;
-}
-//font family
-// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 400 to 900
-
-.cinzel-regular {
-  font-family: "Cinzel", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-.flex {
-  display: flex;
-  gap: var(--gap, 0.5rem);
-}
-
 //styles
 #hero {
   background-image: url("./../img/background.jpg");
@@ -78,7 +45,6 @@ header {
 
 @media (max-width: 50em) {
   header {
-
     .btnToggle {
       position: absolute;
       top: 2rem;
@@ -89,12 +55,12 @@ header {
       cursor: pointer;
       width: 2rem;
       border: none;
-      background-image:url("./../img/icon-hamburger.svg");
+      background-image: url("./../img/icon-hamburger.svg");
       background-color: transparent;
       background-repeat: no-repeat;
     }
   }
-  .btnToggle[aria-expanded="true"]{
+  .btnToggle[aria-expanded="true"] {
     background-image: url("./../img/icon-close.svg");
   }
 
@@ -104,7 +70,7 @@ header {
     background: hsl(0% 0% 100% / 0.1%);
     backdrop-filter: blur(0.5rem);
     transform: translateX(100%);
-    transition: transform .4s ease-out;
+    transition: transform 0.4s ease-out;
     &__list {
       flex-direction: column;
       padding-top: 5rem;
@@ -114,8 +80,7 @@ header {
     }
   }
 
-  .navbar[data-visible="true"]{
+  .navbar[data-visible="true"] {
     transform: translateX(0);
-    
   }
 }

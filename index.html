@@ -3,20 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <script src="script.js" defer></script>
     <title>Responsive Navbar</title>
   </head>
   <body>
+    <!-- HERO SECTION -->
     <section id="hero">
       <header class="flex">
-        <h2 class="logo cinzel-regular" >THEEYES<span class="cinzel-regular">OFBEAUTY</span></h2>
-        <button aria-controls="navbar" aria-expanded="false" class="btnToggle"></button>
+        <h2 class="logo cinzel-regular">
+          THEEYES<span class="cinzel-regular">OFBEAUTY</span>
+        </h2>
+        <button
+          aria-controls="navbar"
+          aria-expanded="false"
+          class="btnToggle"
+        ></button>
         <nav role="navigation" class="navbar">
-          <ul class=" flex navbar__list" id="navbar" data-visible="false">
+          <ul class="flex navbar__list" id="navbar" data-visible="false">
             <li class="navbar__item">
               <a href="#" class="navbar__link cinzel-regular">A PROPOS</a>
             </li>
@@ -31,9 +41,38 @@
             </li>
           </ul>
         </nav>
-
       </header>
+    </section>
+    <!-- ABOUT ME SECTION -->
+    <section id="about">
+      <div class="wrapper">
+        <div class="left">
+          <div class="text-container">
 
+            <h2 class="title-2 cinzel-semibold">Hey! Je m'appelle Emily,</h2>
+            <h4 class="subitle cinzel-regular title-4">Et je suis super contente !</h4>
+            <p class="about-me">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at
+              blandit enim, eget commodo sapien. Nullam vel pellentesque sem. In
+              rhoncus, dolor sed ornare tincidunt, nunc velit hendrerit purus, ac
+              lobortis erat nunc id tortor. Nullam eget massa leo. Sed mattis
+              pulvinar semper. Etiam orci ante, convallis et mi sed, ultricies
+              sollicitudin nulla. Praesent tincidunt auctor arcu, eu cursus sapien
+              aliquet vestibulum. Sed interdum vulputate pellentesque. Suspendisse
+              nisi ante, mattis ac quam eget, blandit ullamcorper quam.
+            </p>
+            <button class="btn cinzel-regular">Suivez moi</button>
+          </div>
+        </div>
+        <div>
+          <div class="right">
+            <div class="image-container">
+
+              <img src="./img/about.jpeg" alt="" class="image-about-me" />
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </body>
 </html>
