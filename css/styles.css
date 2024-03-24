@@ -7,7 +7,6 @@
 
 html {
   font-size: 100%;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 li {
@@ -16,6 +15,114 @@ li {
 
 a {
   text-decoration: none;
+}
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
 }
 
 .cinzel-regular {
@@ -28,7 +135,7 @@ a {
 .cinzel-semibold {
   font-family: "Cinzel", serif;
   font-optical-sizing: auto;
-  font-weight: 600;
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -134,12 +241,11 @@ header .btnToggle {
   border: 1px solid red;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: min-content;
+  height: max-content;
 }
 
 .left {
   display: flex;
-  height: 100%;
   justify-content: center;
   align-items: center;
 }
@@ -169,10 +275,51 @@ header .btnToggle {
 
 .right .image-container {
   width: 100%;
+  height: auto;
 }
 .right .image-container .image-about-me {
   width: 100%;
   object-fit: cover;
+}
+
+#blog {
+  height: 80vh;
+}
+
+.blog-section-wrapper {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  max-width: 25rem;
+  min-height: 40rem;
+  box-shadow: 7px 5px 12px 0px rgba(53, 53, 53, 0.75);
+  -webkit-box-shadow: 7px 5px 12px 0px rgba(53, 53, 53, 0.75);
+  -moz-box-shadow: 7px 5px 12px 0px rgba(53, 53, 53, 0.75);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.card__image {
+  width: 22rem;
+  height: auto;
+}
+.card__image img {
+  width: 100%;
+  height: 14rem;
+  border-radius: 1rem;
+  object-fit: fill;
+}
+.card__content {
+  border: 1px solid red;
+}
+.card .title-3 {
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
