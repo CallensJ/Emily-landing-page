@@ -1,11 +1,14 @@
-#blog {
-  height: 80vh;
+#blog{
+    height: auto;
 }
 .blog-section-wrapper {
+width: 100%;
   padding: 2rem;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  
 }
 
 .card {
@@ -15,7 +18,6 @@
   -webkit-box-shadow: 7px 5px 12px 0px rgba(53, 53, 53, 0.75);
   -moz-box-shadow: 7px 5px 12px 0px rgba(53, 53, 53, 0.75);
   padding: 1rem;
-  //border: 1px solid blue;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -30,7 +32,7 @@
     }
   }
   &__content {
-    border: 1px solid red;
+    //border: 1px solid red;
   }
   .title-3 {
     margin-bottom: 1rem;

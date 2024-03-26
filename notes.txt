@@ -1,5 +1,13 @@
-photos authors:  unsplash.com
+Photos gallery: Unsplash.com
+
+
+Photographs authors:
 
 @alexandruz
 @johanmouchet
 @hamed17985
+@amiresel
+@jamie_fenn
+@egor_vikhrev
+@luxdamore
+@ionfet
