@@ -437,4 +437,63 @@ header .btnToggle {
   grid-row: 6/7;
 }
 
+#contact {
+  height: 60vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 2rem;
+  padding-top: 5rem;
+}
+
+#form-container {
+  box-shadow: 7px 5px 12px 0px rgba(53, 53, 53, 0.75);
+  -webkit-box-shadow: 7px 5px 12px 0px rgba(53, 53, 53, 0.75);
+  -moz-box-shadow: 7px 5px 12px 0px rgba(53, 53, 53, 0.75);
+  padding: 1rem;
+}
+#form-container .form {
+  padding-right: 1rem;
+}
+
+.name,
+.email,
+.message {
+  width: 50%;
+  margin: 2rem 0;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #353535;
+  outline: none;
+  margin-top: 1rem;
+}
+
+input:focus {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #d1ad8f;
+  transition: 0.3s;
+}
+
+textarea {
+  min-height: 5rem;
+}
+
+#text-container {
+  padding-left: 2rem;
+}
+#text-container h2 {
+  font-size: 3rem;
+}
+#text-container p {
+  font-size: 1.5rem;
+}
+
 /*# sourceMappingURL=styles.css.map */
