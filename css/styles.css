@@ -326,7 +326,6 @@ header .btnToggle {
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 5vw);
   grid-gap: 15px;
-  margin: 0 2rem;
 }
 
 .gallery__img {
@@ -494,6 +493,41 @@ textarea {
 }
 #text-container p {
   font-size: 1.5rem;
+}
+
+#footer {
+  background-color: #d1ad8f;
+  height: auto;
+}
+#footer .wrapper-footer {
+  height: 100%;
+  margin: 0 2rem;
+  padding: 0 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #ffffff;
+}
+#footer .wrapper-footer .footer-navbar .nav-list .nav-item .nav-link {
+  font-size: 0.8rem;
+}
+#footer .wrapper-footer .contact .social-icons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+#footer .wrapper-footer .contact .social-icons .social-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+#footer .wrapper-footer .contact .mail-address {
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+#footer .wrapper-footer .contact .postal-address {
+  text-align: center;
+  font-size: 0.8rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
