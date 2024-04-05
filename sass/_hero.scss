@@ -1,20 +1,16 @@
 //styles
 #hero {
-  background-image: url("./../img/background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 80% 5%;
   height: 100vh;
-  width: 100vw;
 }
+//navbar styles
 header {
   background-color: #d1ad8f;
   height: 5rem;
-  //display: flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-right: 2rem;
-  padding-left: 2rem;
+  padding-right: 3rem;
+  padding-left: 3rem;
 
   .logo {
     span {
@@ -27,7 +23,7 @@ header {
 }
 
 .navbar {
-  width: 28rem;
+  width: 23rem;
   &__list {
     justify-content: space-between;
     .navbar__item {
@@ -40,6 +36,45 @@ header {
         transition: all 0.3s;
       }
     }
+  }
+}
+
+//hero container styles
+#hero-container {
+  //border: 2px solid red;
+  .content-bloc {
+    //border: 1px solid blue;
+    margin: 3rem 0;
+    padding: 1rem;
+    height: fit-content;
+
+    .hero-titles-container {
+      text-align: center;
+      .hero-title {
+        font-size: 6rem;
+
+        .uppercase-letter {
+          font-size: 6rem;
+        }
+      }
+      .hero-subtitles-container {
+      }
+    }
+    .btn-container{
+      margin-top: 2rem;
+      text-align: center;
+    }
+  }
+  //background image container styles (right)
+  .illustration-bloc {
+    //border: 2px solid green;
+    //margin: 1rem;
+    max-width: 100%;
+    height: 20rem;
+    background-image: url("./../img/background.jpg");
+    background-size: cover;
+    background-position: 80%;
+    background-repeat: no-repeat;
   }
 }
 
@@ -82,5 +117,38 @@ header {
 
   .navbar[data-visible="true"] {
     transform: translateX(0);
+  }
+}
+
+@media (min-width: 50em) {
+  //hero container
+  #hero-container {
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .content-bloc {
+      padding-top: 5rem;
+      width: 100%;
+      margin: 0 auto;
+      .hero-titles-container {
+        .hero-title {
+          font-size: 10rem;
+          //border: 1px solid blue;
+          .uppercase-letter {
+            font-size: 12rem;
+          }
+        }
+        .hero-subtitles-container {
+          margin-top: -3.5rem;
+          margin-bottom: 2rem;
+          //border: 1px solid green;
+        }
+      }
+
+    }
+
+    .illustration-bloc {
+      height: 100%;
+    }
   }
 }
