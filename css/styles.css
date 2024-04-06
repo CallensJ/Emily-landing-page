@@ -176,6 +176,11 @@ a {
   border: 2px solid #d1ad8f;
 }
 
+.btn-gallery:hover {
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
 .title-2 {
   font-size: 1.6rem;
 }
@@ -392,6 +397,27 @@ header .btnToggle {
   margin-top: 1rem;
   margin-bottom: 1rem;
   line-height: 1.7rem;
+}
+
+#gallery {
+  background-color: #d1ad8f;
+}
+
+.images-container {
+  width: 100%;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.images-container .image {
+  width: 20rem;
+  height: 25rem;
+  object-fit: cover;
+}
+
+.btn-container {
+  margin-top: 4rem;
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
