@@ -144,9 +144,9 @@ a {
 }
 
 .wrapper {
-  max-width: 100%;
+  max-width: 1920px;
   margin: 0 3rem;
-  border: 1px solid red;
+  padding: 5rem 0;
 }
 
 .btn {
@@ -167,22 +167,22 @@ a {
   color: #d1ad8f;
 }
 
+.btn-blog {
+  padding: 1rem rem;
+}
+
 .btn-gold:hover {
   color: #353535;
   border: 2px solid #d1ad8f;
 }
 
 .title-2 {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
-@media (min-width: 50em) {
-  .title-2 {
-    font-size: 2rem;
-  }
-}
-#hero {
-  height: 100vh;
+.title-3 {
+  font-size: 1.5rem;
+  padding: 2rem 0 0 3rem;
 }
 
 header {
@@ -289,7 +289,7 @@ header .btnToggle {
   #hero-container .content-bloc {
     padding-top: 5rem;
     width: 100%;
-    margin: 0 auto;
+    margin: 5rem auto;
   }
   #hero-container .content-bloc .hero-titles-container .hero-title {
     font-size: 10rem;
@@ -305,9 +305,93 @@ header .btnToggle {
     height: 100%;
   }
 }
+#about {
+  background-color: #f3f2f0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.content .me {
+  width: 100%;
+  object-fit: contain;
+}
+.content .text-container {
+  margin-top: 2rem;
+}
+.content .text-container .title-2 {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.content .text-container .about-me {
+  line-height: 2rem;
+}
+.content .text-container .btn-container {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+@media (min-width: 50em) {
+  .content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: initial;
+    gap: 2rem;
+  }
+  .content .me {
+    width: 20%;
+  }
+  .content .text-container {
+    width: 60%;
+    margin-left: 10rem;
+  }
+  .content .text-container .about-me {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    line-height: 2rem;
+  }
+}
 #intersection {
   background-color: #d1ad8f;
-  height: 10rem;
+  height: fit-content;
+  text-align: center;
+  padding: 3rem;
+}
+#intersection p {
+  line-height: 2rem;
+}
+
+.cards-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.cards-container .card {
+  width: 25rem;
+  margin-bottom: 3rem;
+}
+.cards-container .card .image-container {
+  width: 100%;
+  height: 15rem;
+}
+.cards-container .card .image-container .blog-image {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+.cards-container .card .card-content {
+  margin-top: 2rem;
+}
+.cards-container .card .card-content .card-title {
+  cursor: pointer;
+}
+.cards-container .card .card-content .article {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.7rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

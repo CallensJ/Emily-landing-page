@@ -1,7 +1,5 @@
 //styles
-#hero {
-  height: 100vh;
-}
+
 //navbar styles
 header {
   background-color: #d1ad8f;
@@ -52,6 +50,7 @@ header {
       text-align: center;
       .hero-title {
         font-size: 6rem;
+        
 
         .uppercase-letter {
           font-size: 6rem;
@@ -60,7 +59,7 @@ header {
       .hero-subtitles-container {
       }
     }
-    .btn-container{
+    .btn-container {
       margin-top: 2rem;
       text-align: center;
     }
@@ -129,11 +128,10 @@ header {
     .content-bloc {
       padding-top: 5rem;
       width: 100%;
-      margin: 0 auto;
+      margin: 5rem auto;
       .hero-titles-container {
         .hero-title {
           font-size: 10rem;
-          //border: 1px solid blue;
           .uppercase-letter {
             font-size: 12rem;
           }
@@ -144,7 +142,6 @@ header {
           //border: 1px solid green;
         }
       }
-
     }
 
     .illustration-bloc {

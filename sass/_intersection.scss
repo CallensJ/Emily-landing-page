@@ -1,4 +1,9 @@
 #intersection{
     background-color: #d1ad8f;
-    height: 10rem;
+    height: fit-content;
+    text-align: center;
+    padding: 3rem;
+    p{
+        line-height: 2rem;
+    }
 }
