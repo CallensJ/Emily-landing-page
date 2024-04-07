@@ -461,7 +461,7 @@ header .btnToggle {
     gap: 2rem;
   }
   .contact-content .contact-options {
-    padding-top: 2rem;
+    margin-top: 5rem;
   }
   .contact-content .text-container {
     width: 60%;
@@ -475,6 +475,93 @@ header .btnToggle {
     margin-top: 2rem;
     line-height: 2rem;
     text-align: initial;
+  }
+}
+#footer {
+  background-color: #d1ad8f;
+  height: auto;
+}
+#footer .copyright {
+  text-align: center;
+  padding: 2rem 0;
+  background-color: #d1ad8f;
+}
+
+.f-navbar__link {
+  color: #353535;
+}
+
+.navbar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2rem;
+  height: 100%;
+}
+.navbar-container .footer-navbar {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  height: 100%;
+}
+.navbar-container .f-navber-bloc-1 {
+  margin: 2rem 0;
+  padding: 1rem;
+}
+.navbar-container .f-navbar__list {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.navbar-container .f-navbar__list .f-navbar__item {
+  margin: 0.5rem;
+}
+.navbar-container .f-navbar-bloc-2 {
+  margin: 2rem 0;
+  padding: 1rem;
+}
+.navbar-container .f-navbar-bloc-2 .f-navbar__list {
+  text-align: center;
+}
+.navbar-container .logo {
+  font-size: 4rem;
+}
+
+@media (min-width: 50em) {
+  #footer .copyright {
+    padding-bottom: 2rem;
+  }
+  .navbar-container {
+    padding: 0;
+  }
+  .navbar-container .footer-navbar {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50%;
+  }
+  .navbar-container .footer-navbar .f-navbar-bloc-1 {
+    width: 15rem;
+  }
+  .navbar-container .footer-navbar .f-navbar-bloc-1 .f-navbar__list {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar-container .footer-navbar .f-navbar-bloc-2 {
+    width: 15rem;
+  }
+  .navbar-container .footer-navbar .f-navbar-bloc-2 .f-navbar__list {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar-container .border-bottom {
+    width: 50%;
+    border: 1px solid #353535;
   }
 }
 

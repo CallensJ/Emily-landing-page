@@ -9,6 +9,7 @@
   align-items: center;
   .contact-options {
     //border: 1px solid red;
+    //text-align: center;
     .social-contact {
       margin: 2rem 0;
       .icon {
@@ -43,7 +44,8 @@
     justify-content: initial;
     gap: 2rem;
     .contact-options{
-        padding-top: 2rem;
+        margin-top: 5rem;
+  
     }
     .text-container {
       width: 60%;
